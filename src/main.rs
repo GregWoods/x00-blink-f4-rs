@@ -8,16 +8,12 @@
 #![no_std]
 #![no_main]
 
+
 use panic_halt as _;
-
-//use nb::block;
-
-
 use cortex_m::peripheral::syst::SystClkSource;
 use cortex_m_rt::entry;
 use stm32f1::stm32f103 as pac;
 
-//use embedded_hal::digital::v2::OutputPin;
 
 #[entry]
 fn main() -> ! {
@@ -33,12 +29,12 @@ fn main() -> ! {
     syst.set_reload(2_100_000); //internal in clock ticks
     syst.enable_counter();
 
-    // APB Adv.Periph.Bus 2 port enable register. Enable port A
-    rcc.apb2enr.write(|w| w.iopaen().set_bit());        
-    let gpioa = dp.GPIOA;
+    // Enable port C on APB2 
+    rcc.apb2enr.write(|w| w.iopcen().set_bit());        
+    let gpioc = dp.GPIOC;
 
-    // Set pin A7 as general purpose output, with push/pull mode, 2MHz max
-    gpioa.crl.write(|w| w.cnf7().bits(0b00).mode7().bits(0b10));
+    // Set pin C13 as general purpose output, with push/pull mode, 2MHz max
+    gpioc.crh.write(|w| w.cnf13().bits(0b00).mode13().bits(0b10));
     
     // Restart the SysTick counter.
     syst.clear_current();
@@ -46,8 +42,8 @@ fn main() -> ! {
     loop {
         // Toggle the LED every SysTick tick.
         while !syst.has_wrapped() {};
-        gpioa.odr.write(|w| w.odr7().set_bit());
+        gpioc.odr.write(|w| w.odr13().set_bit());
         while !syst.has_wrapped() {};
-        gpioa.odr.write(|w| w.odr7().clear_bit());
+        gpioc.odr.write(|w| w.odr13().clear_bit());
     }
 }

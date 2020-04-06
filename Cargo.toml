@@ -1,5 +1,5 @@
 [package]
-name = "stm32-00-blink"
+name = "stm32f1-00-blink"
 version = "0.1.0"
 authors = ["Greg Woods <gregwoodslancs@gmail.com>"]
 edition = "2018"
