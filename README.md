@@ -8,7 +8,8 @@ Blinks the onboard LED.
 * clone this repository
 * Plug your STLink-v2 clone into you PC, with the headers connected correctly to the Blue Pill
 * `cargo build` from the VS Code built-in Terminal (Ctrl+')
-* Start debugging from within VS Code (Ctrl+Shift+D)
+* Open the debugging sidebar in VS Code (Ctrl+Shift+D)
+* Hit "play" Debug (OpenOCD)
 
 ## Learning Rust
 
