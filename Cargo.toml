@@ -17,3 +17,9 @@ panic-halt = "*"
 [dependencies.stm32f4]
 git = "https://github.com/stm32-rs/stm32-rs-nightlies"
 features = ["stm32f411", "rt"]
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3

@@ -50,8 +50,8 @@ name = "cortex-m-rt-macros"
 version = "0.1.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "proc-macro2 1.0.10 (registry+https://github.com/rust-lang/crates.io-index)",
- "quote 1.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "proc-macro2 1.0.12 (registry+https://github.com/rust-lang/crates.io-index)",
+ "quote 1.0.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "syn 1.0.18 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -92,7 +92,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.10"
+version = "1.0.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "unicode-xid 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -100,10 +100,10 @@ dependencies = [
 
 [[package]]
 name = "quote"
-version = "1.0.3"
+version = "1.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "proc-macro2 1.0.10 (registry+https://github.com/rust-lang/crates.io-index)",
+ "proc-macro2 1.0.12 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -140,7 +140,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "stm32f4"
 version = "0.11.0"
-source = "git+https://github.com/stm32-rs/stm32-rs-nightlies#3d915a0964c6c6065e5059ac7e96313798dd1b29"
+source = "git+https://github.com/stm32-rs/stm32-rs-nightlies#b7cbdf501ef9e084126b345ab36b047030e040c8"
 dependencies = [
  "bare-metal 0.2.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "cortex-m 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -165,8 +165,8 @@ name = "syn"
 version = "1.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "proc-macro2 1.0.10 (registry+https://github.com/rust-lang/crates.io-index)",
- "quote 1.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "proc-macro2 1.0.12 (registry+https://github.com/rust-lang/crates.io-index)",
+ "quote 1.0.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "unicode-xid 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -210,8 +210,8 @@ dependencies = [
 "checksum generic-array 0.13.2 (registry+https://github.com/rust-lang/crates.io-index)" = "0ed1e761351b56f54eb9dcd0cfaca9fd0daecf93918e1cfc01c8a3d26ee7adcd"
 "checksum nb 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "b1411551beb3c11dedfb0a90a0fa256b47d28b9ec2cdff34c25a2fa59e45dbdc"
 "checksum panic-halt 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "de96540e0ebde571dc55c73d60ef407c653844e6f9a1e2fdbd40c07b9252d812"
-"checksum proc-macro2 1.0.10 (registry+https://github.com/rust-lang/crates.io-index)" = "df246d292ff63439fea9bc8c0a270bed0e390d5ebd4db4ba15aba81111b5abe3"
-"checksum quote 1.0.3 (registry+https://github.com/rust-lang/crates.io-index)" = "2bdc6c187c65bca4260c9011c9e3132efe4909da44726bad24cf7572ae338d7f"
+"checksum proc-macro2 1.0.12 (registry+https://github.com/rust-lang/crates.io-index)" = "8872cf6f48eee44265156c111456a700ab3483686b3f96df4cf5481c89157319"
+"checksum quote 1.0.4 (registry+https://github.com/rust-lang/crates.io-index)" = "4c1f4b0efa5fc5e8ceb705136bfee52cfdb6a4e3509f770b478cd6ed434232a7"
 "checksum r0 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)" = "e2a38df5b15c8d5c7e8654189744d8e396bddc18ad48041a500ce52d6948941f"
 "checksum rustc_version 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)" = "138e3e0acb6c9fb258b19b67cb8abd63c00679d2851805ea151465464fe9030a"
 "checksum semver 0.9.0 (registry+https://github.com/rust-lang/crates.io-index)" = "1d7eb9ef2c18661902cc47e535f9bc51b78acd254da71d375c2f6720d9a40403"
