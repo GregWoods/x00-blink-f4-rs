@@ -1,6 +1,6 @@
-# stm32f1-00-blink
+# stm32f4-00-blink
 
-A microcontroller version of "hello, world", for the STM32F103 Blue Pill board.
+A microcontroller version of "hello, world", for the STM32F411 Black Pill board.
 Blinks the onboard LED.
 
 ## Steps
