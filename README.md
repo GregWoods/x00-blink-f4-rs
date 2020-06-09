@@ -18,7 +18,7 @@ I hope this repo is useful as part of your embedded Rust journey.
 It intentionally keeps things simple, and avoids the use a HAL (Hardware abstraction layer).
 
 My limited experience of microcontrollers tells me that you need to understand the chip's Reference Manual in order to use it. 
-By using the Peripheral Access Crate (stm32f1) instead of a HAL, you can more easily see how your code directly relates to 
+By using the Peripheral Access Crate (stm32f4) instead of a HAL, you can more easily see how your code directly relates to 
 the registers in the microcontroller.
 
 
